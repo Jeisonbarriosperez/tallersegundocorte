@@ -1,0 +1,104 @@
+body {
+  background-color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 27% 46% 27%;
+  grid-template-rows: 240px 350px;
+  max-width: 100%;
+  padding-right: 1%;
+}
+
+.grid-container>div {
+  text-align: center;
+}
+
+.contenedorHijo {
+  grid-column: 10px;
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+
+.contenedorHijo2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100% 100%;
+  height: 100%;
+}
+
+.contenedorHijo3 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100% 100%;
+}
+
+.grid-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.contenedorHijo3>img {
+  width: 100%;
+  height: auto;
+}
+
+.contenedorHijo2 div img {
+  height: 100%;
+}
+textarea {
+  height: 100px;
+}
+.contenedorExterior {
+  position: relative;
+}
+.contenedorInterior {
+  position: absolute;
+  top: 42%;
+  left: 74%;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  background-color: rgba(255, 255, 255, 0.2);
+  text-align: left;
+  width: 23%;
+}
+
+.contenedorInterior h2 {
+  margin-left: 2%;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+input#boton {
+  width: 50%;
+  text-align: center;
+  color: white;
+  background-color: rgb(231, 81, 12);
+}
+
+.butom {
+  display: flex;
+  justify-content: right;
+  margin-right: 2%;
+}
+
+.contenedorInterior input {
+  margin: 10px;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.contenedorInterior textarea {
+  margin: 10px;
+  max-height: 80px; /*establecer el maximo del texarea*/
+  max-width: 30%;
+  
+  min-width: 92%;
+  min-height: 80px;
+}
+textarea{
+  height: 80px;
+}
